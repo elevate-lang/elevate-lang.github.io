@@ -1,5 +1,6 @@
 @import url("fontawesome-all.min.css");
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,400italic,700,800");
+/* @import url("https://fonts.googleapis.com/css?family=Raleway:400,400italic,700,800"); */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400&display=swap');
 
 
@@ -118,7 +119,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #6f7577;
-		font-family: "Raleway", "Helvetica", sans-serif;
+		font-family: 'Fira Sans', sans-serif;
 		font-size: 15pt;
 		font-weight: 400;
 		line-height: 1.75em;
@@ -130,13 +131,13 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #8cd1a8;
+		color: #cf7171;
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent !important;
-			color: #8cd1a8 !important;
+			color: #cf7171 !important;
 			text-decoration: none;
 		}
 
@@ -1930,8 +1931,8 @@ input, select, textarea {
 
     header p {
 		color: #a8b0b3;
-        font-size: 2em;
-        font-family: Lobster;
+		font-size: 2em;
+		font-family: 'Playfair Display', serif;
 	}
 
 	header h1 + p {
@@ -1964,12 +1965,12 @@ input, select, textarea {
         header.major h1 {
 			position: relative;
             font-weight: 300;
-            font-family: FiraSans Light;
+			font-family: 'Fira Sans', sans-serif;
 		}
 
         header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
 			position: relative;
-            font-family: Lobster;
+            font-family: 'Playfair Display', serif;
             text-transform: none;
 		    letter-spacing: 0em;
 		}
@@ -2385,6 +2386,53 @@ input, select, textarea {
 			content: '';
 			display: block;
 		}
+
+/* Image Grid */
+
+ul.image-grid {
+	list-style: none;
+	padding: 0;
+	position: relative;
+}
+
+	ul.image-grid li {
+		display: block;
+		float: left;
+		padding: 1em 0;
+		width: 50%;
+	}
+
+		ul.image-grid li h3 {
+			margin: 0;
+		}
+
+		ul.image-grid li p {
+			color: #6f7577;
+			font-family: 'Fira Sans', sans-serif;
+			font-size: 90%;
+			font-weight: 400;
+			line-height: 1.25em;
+		}
+
+		ul.image-grid li:nth-child(2n + 1) {
+			box-shadow: inset -1px 0 0 0 #dddddd, 1px 0 0 0 #dddddd;
+		}
+
+		ul.image-grid li:nth-child(2n + 3):before {
+			background: #dddddd;
+			content: '';
+			display: block;
+			height: 2px;
+			margin-top: -3em;
+			position: absolute;
+			width: 100%;
+		}
+
+	ul.image-grid:after {
+		clear: both;
+		content: '';
+		display: block;
+	}
 
 /* Actions */
 
@@ -2826,7 +2874,7 @@ input, select, textarea {
 
 			#header header h1, #header header h2, #header header h3, #header header h4, #header header h5, #header header h6, #header header strong, #header header b {
 				color: #343239;
-                font-family: Raleway;
+				font-family: 'Fira Sans', sans-serif;
 			}
 
 			#header header a {
@@ -2849,7 +2897,7 @@ input, select, textarea {
 				}
 
 			#header header p {
-				color: #e3e1e3;
+				color: #bebebe;
 				font-weight: 700;
                 font-size: 2.4em;
 				margin: 0.5em 0 0 0;
@@ -2876,7 +2924,7 @@ input, select, textarea {
 
 	#footer {
         color: #000;
-		min-height: 100vh;
+		/* min-height: 100vh; */
 		padding: 0 0 12em 0;
 		position: relative;
 		text-align: center;
