@@ -1,7 +1,8 @@
 @import url("fontawesome-all.min.css");
 /* @import url("https://fonts.googleapis.com/css?family=Raleway:400,400italic,700,800"); */
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap'); */
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
 
 
 /*
@@ -1932,7 +1933,7 @@ input, select, textarea {
     header p {
 		color: #a8b0b3;
 		font-size: 2em;
-		font-family: 'Playfair Display', serif;
+		font-family: 'Lobster', serif;
 	}
 
 	header h1 + p {
@@ -1970,7 +1971,7 @@ input, select, textarea {
 
         header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
 			position: relative;
-            font-family: 'Playfair Display', serif;
+            font-family: 'Lobster', serif;
             text-transform: none;
 		    letter-spacing: 0em;
 		}
